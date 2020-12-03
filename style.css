@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+
+#navbar{
+        display: flex;
+        position: sticky;
+        align-items: center; 
+        /* height: 73px; */
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+#navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+             opacity: .4;
+            }
+            
+#logo{
+    margin: 10px 34px;
+}
+
+  #logo img{
+/* margin: 2px 30px; */
+height: 60px;
+    
+}
+#navbar ul{
+    display: flex;
+    margin: 0px 4px;
+    padding: 17px;
+}
+
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1rem;
+    
+    
+}
+#navbar ul li a{
+    
+    /* display: block;  */
+    color: white;
+    padding: 4px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+ 
+    cursor: pointer;
+
+}
+#navbar ul li a:hover{
+    
+    color:black;
+    background-color: white;
+
+}
+
+/* Home Decoration */
+ #home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 200px;
+    height: 296px; 
+    font-family: 'Baloo Bhaina 2', cursive;
+    
+} 
+
+ #home::before{
+    content: " ";
+    background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 64%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .89;
+} 
+        #home p{
+            color: white;
+            font-size: 1em;
+        }
+
+
+
+        /* services */
+
+ #services-container{
+            content: "";
+            background: url('bg2.jpg');
+            height: 63%;
+            width: 100%;
+            /* z-index: -1; */
+            /* opacity: .5; */
+        }
+#services-container h1{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+            }
+
+#services{
+    display: flex;
+    
+
+}
+#services .box{
+    border: 2px solid rgb(216, 134, 134);
+    margin: 22px 67px;
+    padding: 14px;
+    border-radius: 25px;
+    background-color: rgb(250, 244, 244);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.box img{
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* Client-section */
+#client-section{
+    
+   height: 350px;
+    
+}
+#client-section::before{
+    content: " ";
+    background: url('client1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 53.2% ;
+    width: 100%;
+   /* margin-top: 10px; */
+    z-index: -1;
+    opacity: .45;
+}
+#client-section h1{
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: black;
+    font-size: 3.3rem;
+    /* margin-top: 18px; */
+    margin-bottom: 0px;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+.client-items{
+    
+    padding: 0px 15px;
+}
+
+.client-items img{
+    height: 80px;
+}
+
+/* Contact Section */
+#contact{
+    height: 300px;
+    position: relative;
+
+}
+#contact h1{
+  
+    color: black;
+}
+#contact::before{
+    content: "";
+    background: url('contact1.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input{
+  width: 100%;
+    padding: 4px;
+    border-radius: 8px;
+}
+#contact-box form{
+  width: 40%;
+
+}
+#contact-box label{
+ font-size: 1.3rem;
+
+}
+#contact-box form button{
+    color: black;
+    font-size: 1.3rem;
+ display: block;
+ width: 300px;
+ margin: 8px auto;
+ background-color: rgb(255, 255, 255);
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+}
+
+
+
+/* Utility Class*/
+.h_primary{
+    color: white;
+    font-size: 2.3em;
+    /* margin-top: 18px; */
+}
+.h_secondary{
+    color: rgb(190, 101, 101);
+    font-size: 1.3em;
+    margin-top: 8px;
+    padding: 4px;
+}
+.btn{
+    margin: 11px;
+    padding: 4px 18px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgb(169 69 52);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
